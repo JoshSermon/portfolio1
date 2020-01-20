@@ -1,3 +1,7 @@
+/*
+  If you get stuck, feel free to watch the follow-up videos where I'll show you one solution
+*/
+
 /* ================================= 
   Base Element Styles
 ==================================== */
@@ -9,7 +13,7 @@
 body {
 	font-family: 'Varela Round', sans-serif;
 	line-height: 1.6;
-    color: #fff;
+	color: #3a3a3a;
 }
 
 p {
@@ -17,11 +21,10 @@ p {
 	margin-bottom: 1.8em;
 }
 
-
 h2,
 h3,
 a {
-	color: #fff;
+	color: #093a58;
 }
 
 h2,
@@ -31,10 +34,14 @@ h3 {
 
 a {
 	text-decoration: none;
-} 
+}
+
+img {
+	max-width: 100%;
+}
 
 h2 {
-  text-align: center;
+  text-align: left;
   padding-top: 25px;
 }
 
@@ -66,6 +73,7 @@ h2 {
 .name,
 .main-nav li {
 	text-align: center;
+	background: #fff;
 	margin-top: 6px;
 	margin-bottom: 6px;
 }
@@ -79,11 +87,12 @@ h2 {
 
 	.main-nav a {
 		font-size: .95em;
+		color: #3acec2;
 		text-transform: uppercase;
 	}
 	
 	.main-nav a:hover {
-		color: rgb(23, 33, 54);
+		color: #093a58;
 	}
 
 
@@ -91,28 +100,60 @@ h2 {
 
 .banner {
 	color: #fff;
-    background: rgb(23, 33, 54);
+	background: #3acec2;
   text-align: center;
-  padding-top: 33%;
+  padding-top: 25px;
 }
 
 .container {
 	padding-left: 1em;
-    padding-right: 1em;
+	padding-right: 1em;
 }
 
 .main-header {
-	padding-top: 2px;
-	background: black;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	background: #fff;
 }
 
 .main-footer {
-	text-align: right;
-	padding: 1.5em 1em;
-	background: black;
+	text-align: center;
+	padding: 2em 0;
+	background: #d9e4ea;
 }
 
 /* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+  
+}
+
+/* ================================= 
+  Columns
+==================================== */
+
+.col {
+		float: left;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+.primary {
+  width: 33.3%;
+}
+
+.secondary {
+  width: 33.3%;
+}
+
+.tertiary {
+  width: 33.3%;
+}
+
+.headline {
+  margin-bottom: 0;
+ }
 
 
 /* ================================= 
@@ -126,6 +167,12 @@ h2 {
 	}
 
 	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
 
 .name {
   float: left;
