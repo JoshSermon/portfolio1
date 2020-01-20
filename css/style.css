@@ -1,0 +1,147 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+    color: #fff;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+
+h2,
+h3,
+a {
+	color: #fff;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+} 
+
+h2 {
+  text-align: center;
+  padding-top: 25px;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.main-nav { 
+  padding-bottom: 10px; 
+}
+
+.main-nav li { 
+  text-align: center; 
+  padding: 5px; 
+}
+
+.name {
+	font-size: 1.25em;
+  margin: 0;
+}
+
+.name a,
+.main-nav a {
+	text-align: center;
+}
+
+.name,
+.main-nav li {
+	text-align: center;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.name a,
+.main-nav a {
+	padding: 10px 15px;
+	text-align: center;
+	display: block;
+}
+
+	.main-nav a {
+		font-size: .95em;
+		text-transform: uppercase;
+	}
+	
+	.main-nav a:hover {
+		color: rgb(23, 33, 54);
+	}
+
+
+/* ---- Layout Containers ---- */
+
+.banner {
+	color: #fff;
+    background: rgb(23, 33, 54);
+  text-align: center;
+  padding-top: 33%;
+}
+
+.container {
+	padding-left: 1em;
+    padding-right: 1em;
+}
+
+.main-header {
+	padding-top: 2px;
+	background: black;
+}
+
+.main-footer {
+	text-align: right;
+	padding: 1.5em 1em;
+	background: black;
+}
+
+/* ---- Page Elements ---- */
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+	.wrap {
+		min-height: calc(100vh - 89px);
+	}
+
+	/* ---- Float clearfix ---- */
+
+.name {
+  float: left;
+}
+
+.main-nav li {
+  float: left;
+  display: inline-block;
+}
+
+.main-nav {
+		float: right;
+	}
+
+.banner { 
+  padding-bottom: 20px; 
+}
+
+}
