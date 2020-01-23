@@ -227,27 +227,3 @@ section{
     background-size: cover;
     height: calc(100vh - 80px);
 }
-
-.contact-section{
-  background: url(../images/Gold.jpg) no-repeat center;
-  background-size: cover;
-  padding: 40px 0;
-}
-
-.contact-section h1{
-  text-align: center;
-  color: #ddd;
-}
-
-.border{
-  width: 100px;
-  height: 10px;
-  background: #34495e;
-  margin: 40px auto;
-}
-
-.contact-form{
-  max-width: 600px;
-  margin: auto;
-  
-}
