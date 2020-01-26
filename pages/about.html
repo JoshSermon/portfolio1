@@ -8,6 +8,115 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 <body>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            box-sizing: border-box;
+        }
+
+        .services-section{
+            background: url(../images/Gold.jpg);
+            background-size: cover;
+            padding: 60px 0;
+        }
+
+        .inner-width{
+            width: 50%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+            overflow: hidden;
+        }
+        
+        .section-title{
+            text-align: center;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 30px;
+            text-shadow: 2px 2px 8px black;
+        }
+
+        .border{
+         width: 160px;
+         height: 2px;
+         background: #fff;   
+         margin: 40px auto;
+        }
+
+        .service-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .service-box{
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .service-icon{
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border: 3px solid #fff;
+            color: #fff;
+            transform: rotate(45deg);
+            margin-bottom: 30px;
+            margin-top: 16px;
+            transition: 0.3s linear;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        .service-icon i{
+            line-height: 35px;
+            transform: rotate(-45deg);
+            font-size: 25px;
+        }
+
+        .service-box:hover .service-icon{
+            background: rgb(179, 141, 17);
+            color: #fff;
+        }
+
+        .service-title{
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 4px black;
+        }
+
+        .service-desc{
+            font-size: 14px;
+            text-shadow: 1px 1px 4px black;
+        }
+
+        @media screen and (max-width: 960px) {
+            .service-box{
+                max-width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .service-box{
+                max-width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .service-box{
+                max-width: 100%;
+            }
+        }
+
+    </style>
+
+
+
     <div class="services-section">
         <div class="inner-width">
             <h1 class="section-title">About Me</h1>
@@ -18,9 +127,11 @@
                     <div class="service-icon">
                         <i class="fab fa-html5"></i>
                     </div>
-                    <div class="section-title">HTML</div>
+                    <div class="section-title">Skills</div>
                     <div class="service-desc">
-                        Front End Developer
+                        HTML5, CSS3, JavaScript, Git, Bootstrap, Responsive Web Design,
+RESTful API, React, jQuery, JSON, AJAX, Swift
+
                     </div>
                 </div>
 
@@ -28,9 +139,9 @@
                     <div class="service-icon">
                         <i class="fab fa-css3-alt"></i>
                     </div>
-                    <div class="section-title">CSS</div>
+                    <div class="section-title">Background</div>
                     <div class="service-desc">
-                        Front End Developer
+                        Front End Developer with hands on experience of designing, developing and maintaining web as well as mobile applications. Demonstrates the capability of maintaining code by fixing bugs as well as conducting end to end testing.
                     </div>
                 </div>
 
@@ -38,37 +149,7 @@
                     <div class="service-icon">
                         <i class="fab fa-js-square"></i>
                     </div>
-                    <div class="section-title">JavaScript</div>
-                    <div class="service-desc">
-                        Front End Developer
-                    </div>
-                </div>
-
-                <div class="service-box">
-                    <div class="service-icon">
-                        <i class="fab fa-git-alt"></i>
-                    </div>
-                    <div class="section-title">Version Control (Git)</div>
-                    <div class="service-desc">
-                        Front End Developer
-                    </div>
-                </div>
-
-                <div class="service-box">
-                    <div class="service-icon">
-                        <i class="fas fa-laptop"></i>
-                    </div>
-                    <div class="section-title">Responsive Design</div>
-                    <div class="service-desc">
-                        Front End Developer
-                    </div>
-                </div>
-
-                <div class="service-box">
-                    <div class="service-icon">
-                        <i class="fas fa-bug"></i>
-                    </div>
-                    <div class="section-title">Testing & Debugging</div>
+                    <div class="section-title">Design</div>
                     <div class="service-desc">
                         Front End Developer
                     </div>
