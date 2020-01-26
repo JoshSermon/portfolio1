@@ -37,7 +37,7 @@
             color: #fff;
             text-transform: uppercase;
             font-size: 30px;
-            text-shadow: 2px 2px 8px black;
+            text-shadow: 2px 2px 4px black;
         }
 
         .border{
@@ -91,8 +91,41 @@
         }
 
         .service-desc{
-            font-size: 14px;
-            text-shadow: 1px 1px 4px black;
+            font-size: 20px;
+            text-shadow: 2px 2px 3px black;
+        }
+
+                /* footer section */
+
+        footer {
+            padding-top: 15px;
+            padding-bottom: 10px;
+            background: #fff;
+        }
+
+        footer p{
+            color: black;
+            font-size: 12px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 0 1em;
+        }
+
+        footer a {
+            color: black;
+        }
+
+            footer a:hover {
+            color: rgb(179, 141, 17);
+        }
+
+        .s-m{
+            position: absolute;
+            left: 50%;
+            margin-left: -38px;
+        }
+
+        body{
+            height: 100%;
         }
 
         @media screen and (max-width: 960px) {
@@ -125,7 +158,7 @@
 
                 <div class="service-box">
                     <div class="service-icon">
-                        <i class="fab fa-html5"></i>
+                        <i class="fas fa-code"></i>
                     </div>
                     <div class="section-title">Skills</div>
                     <div class="service-desc">
@@ -137,7 +170,7 @@ RESTful API, React, jQuery, JSON, AJAX, Swift
 
                 <div class="service-box">
                     <div class="service-icon">
-                        <i class="fab fa-css3-alt"></i>
+                        <i class="fas fa-user-tie"></i>
                     </div>
                     <div class="section-title">Background</div>
                     <div class="service-desc">
@@ -147,20 +180,32 @@ RESTful API, React, jQuery, JSON, AJAX, Swift
 
                 <div class="service-box">
                     <div class="service-icon">
-                        <i class="fab fa-js-square"></i>
+                        <i class="fab fa-adobe"></i>
                     </div>
                     <div class="section-title">Design</div>
                     <div class="service-desc">
-                        Front End Developer
+                        Adobe Photoshop, Adobe InDesign, Adobe Illustrator and Adobe Premier Pro.
                     </div>
                 </div>
             </div>
         </div>
     </div>   
 
-<footer>
-
-</footer>
+    <footer>
+        <div class="container">
+            <div class="row">
+                 <h4><p style="float: left;">JoshuaSermon1@gmail.com</h4>
+                 <h4><p style="float: right;">Copyright &copy; 2020 J.J.Sermon</h4>
+                  <div class="s-m">
+                      <a href="#"><i class="fab fa-linkedin"></i></a>
+                      <a href="#"><i class="fab fa-github"></i></a>
+                      <a href="#"><i class="fas fa-envelope-square"></i></a>
+                      <a href="#"><i class="fas fa-file-word"></i></a>
+                     </div>
+          </div>
+            </div>
+      </div>
+    </footer>
 
 </body>
 </html>
