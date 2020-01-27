@@ -8,40 +8,130 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 <body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <label class="navbar">Projects</label>
-        <ul>
-            <li><a class="active" href="../index.html">Home</a></li>
-            <li><a href="../pages/about.html">About</a></li>
-            <li><a href="../pages/projects.html">Projects</a></li>
-            <li><a href="../pages/contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <section>
-        <h1>Josh Sermon</h1>
-        <h2>Front End Developer</h2>
-        <h3>Atlanta, GA</h3>
-    </section>
+    <div class="wrapper">
+        <nav class="navBar">
+            <a href="#">
+                <img src="../images/logo.png" alt="logo">
+            </a>
+            <a href="#">
+                <img src="../images/menu.png" alt="menu.btn">
+            </a>
+        </nav>
+
+        <header>
+            <h1>Projects</h1>
+        </header>
+
+        <div class="work">
+            <img src="../images/project1.jpg" alt="project img">
+            <img src="../images/project2.jpg" alt="project img">
+            <img src="../images/project3.jpg" alt="project img">
+            <img src="../images/project4.jpg" alt="project img">
+        </div>
+    </div>
+
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            border: none;
+            outline: none;
+            vertical-align: baseline;
+            font-size: 100%;
+        }
+    
+        html {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    
+        body {
+            width: 100%;
+            background: url(../images/Gold.jpg);
+            background-size: cover;
+            padding: 60px 0;
+        }
+
+        .wrapper {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .navBar::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 48px;
+        }
+
+        /* navbar */
+
+        nav {
+            height: 70px;
+            line-height: 70px;
+        }
+
+        nav a img {
+            vertical-align: middle;
+            width: 30px;
+            height: 30px;
+        }
+
+        nav a:nth-child(2) {
+            float: right;
+        }
+
+        /* header */
+
+        header {
+            margin: 100px 0 200px 120px;
+        }
+
+        /* work */
+
+        .work {
+            text-align: center;
+            width: 100%;
+        }
+
+        .work img {
+            margin: 1%;
+            width: 45%;
+        }
+
+        /* Respnsiveness */
+
+        @media only screen and (max-width: 991px) {
+            header {
+                text-align: left;
+                margin: 100px 0 100px 30px;
+            }
+
+            header h1 {
+                font-size: 36px;
+            }
+
+            .work img {
+                margin: 2%;
+                width: 90%;
+
+            }
+
+        }
+
+
+    
+    </style>
+
+
 
 
 <footer>
-    <div class="container">
-		<div class="row">
-             <h4><p style="float: left;">JoshuaSermon1@gmail.com</h4>
-             <h4><p style="float: right;">Copyright &copy; 2020 J.J.Sermon</h4>
-              <div class="s-m">
-                  <a href="#"><i class="fab fa-linkedin"></i></a>
-                  <a href="#"><i class="fab fa-github"></i></a>
-                  <a href="#"><i class="fas fa-envelope-square"></i></a>
-                  <a href="#"><i class="fas fa-file-word"></i></a>
-                 </div>
-      </div>
-		</div>
-  </div>
+
 </footer>
 
 </body>
