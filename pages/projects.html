@@ -8,18 +8,25 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 <body>
-    <div class="wrapper">
-        <nav class="navBar">
-            <a href="#">
-                <img src="../images/logo.png" alt="logo">
-            </a>
-            <a href="#">
-                <img src="../images/menu.png" alt="menu.btn">
-            </a>
-        </nav>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="navbar">Portfolio</label>
+        <ul>
+            <li><a class="active" href="../index.html">Home</a></li>
+            <li><a href="../pages/about.html">About</a></li>
+            <li><a href="../pages/projects.html">Projects</a></li>
+            <li><a href="../pages/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="project-section">
 
         <header>
             <h1>Projects</h1>
+            <div class="border"></div>
         </header>
 
         <div class="work">
@@ -38,58 +45,101 @@
             border: none;
             outline: none;
             vertical-align: baseline;
-            font-size: 100%;
         }
+
+    /* navbar */
+
+    nav{
+        background: #fff;
+        height: 80px;
+        width: 100%;
+  }
+
+  label.navbar{
+    color: black;
+    font-size: 20px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+
+  nav ul{
+      float: right;
+      margin-right: 20px;
+      text-decoration: none;
+  }
+
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+
+  nav ul li a{
+      color: black;
+      font-size: 15px;
+      padding: 7px 13px;
+      border-radius: 3px;
+      text-transform: uppercase;
+      text-decoration: none;
+  }
+
+  a:hover{
+     background: rgb(179, 141, 17);
+     transition: .5s;
+  }
+
+  .checkbtn{
+      font-size: 30px;
+      color: black;
+      float: right;
+      line-height: 80px;
+      margin-right: 40px;
+      cursor: pointer;
+      display: none;
+  }
+  #check{
+      display: none;
+  }
     
         html {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
-    
-        body {
-            width: 100%;
-            background: url(../images/Gold.jpg);
+        
+        .project-section {
+            background: url(../images/Gold.jpg) no-repeat;
             background-size: cover;
-            padding: 60px 0;
+            padding: 10px 0;
+            height: 100%;
+            background-attachment: fixed;
         }
 
+     
         .wrapper {
             width: 90%;
             margin: 0 auto;
         }
 
-        .navBar::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-
         h1 {
             color: #fff;
-            font-size: 48px;
+            font-size: 32px;
+            text-align: center;
+            text-shadow: 2px 2px 4px black;
         }
 
-        /* navbar */
-
-        nav {
-            height: 70px;
-            line-height: 70px;
-        }
-
-        nav a img {
-            vertical-align: middle;
-            width: 30px;
-            height: 30px;
-        }
-
-        nav a:nth-child(2) {
-            float: right;
+        .border{
+         width: 80px;
+         height: 10px;
+         background: #fff;   
+         margin: 40px auto;
         }
 
         /* header */
 
         header {
-            margin: 100px 0 200px 120px;
+            margin: 50px 0 50px 0;
         }
+
 
         /* work */
 
@@ -103,6 +153,94 @@
             width: 45%;
         }
 
+        /* footer */
+
+        nav{
+            background: #fff;
+            height: 80px;
+            width: 100%;
+        }
+
+        label.navbar{
+            color: black;
+            font-size: 20px;
+            line-height: 80px;
+            padding: 0 100px;
+            font-weight: bold;
+        }
+
+        nav ul{
+            float: right;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+
+        nav ul li{
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+
+        nav ul li a{
+            color: black;
+            font-size: 15px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        a:hover{
+            background: rgb(179, 141, 17);
+            transition: .5s;
+        }
+
+        .checkbtn{
+            font-size: 30px;
+            color: black;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+        #check{
+            display: none;
+        }
+
+             /* footer section */
+
+             footer {
+            padding-top: 15px;
+            padding-bottom: 10px;
+            background: #fff;
+        }
+
+        footer p{
+            color: black;
+            font-size: 12px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 0 1em;
+        }
+
+        footer a {
+            color: black;
+        }
+
+            footer a:hover {
+            color: rgb(179, 141, 17);
+        }
+
+        .s-m{
+            position: absolute;
+            left: 50%;
+            margin-left: -38px;
+        }
+
+        body{
+            height: 100%;
+        }
+
         /* Respnsiveness */
 
         @media only screen and (max-width: 991px) {
@@ -112,7 +250,7 @@
             }
 
             header h1 {
-                font-size: 36px;
+                font-size: 32px;
             }
 
             .work img {
@@ -127,11 +265,23 @@
     
     </style>
 
-
+</div>
 
 
 <footer>
-
+    <div class="container">
+        <div class="row">
+             <h4><p style="float: left;">JoshuaSermon1@gmail.com</h4>
+             <h4><p style="float: right;">Copyright &copy; 2020 J.J.Sermon</h4>
+              <div class="s-m">
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                  <a href="#"><i class="fas fa-envelope-square"></i></a>
+                  <a href="#"><i class="fas fa-file-word"></i></a>
+                 </div>
+      </div>
+        </div>
+  </div>
 </footer>
 
 </body>
