@@ -195,9 +195,11 @@ footer {
   }
 
   @media (max-width: 858px){
+
     .checkbtn{
         display: block;
     }
+
   ul{
       position: fixed;
       width: 100%;
@@ -218,7 +220,7 @@ footer {
   }
   a:hover{
       background: none;
-      color: black;
+      color: rgb(179, 141, 17);
   }
   #check:checked ~ ul{
       left: 0;
