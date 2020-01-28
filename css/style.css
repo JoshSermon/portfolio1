@@ -223,6 +223,10 @@ footer {
   #check:checked ~ ul{
       left: 0;
   }
+
+  .btn{
+    display: none;
+  }
 }
 
 section{ 
