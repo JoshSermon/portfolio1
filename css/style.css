@@ -44,7 +44,7 @@
   }
 
   .btn1:hover,.btn2:hover{
-    color: rgb(179, 141, 17);
+    color: #C3C3C3;
   }
 
   .btn1::before,.btn2::before{
@@ -102,7 +102,7 @@
   }
 
   a:hover{
-     background: rgb(179, 141, 17);
+     background:#C3C3C3;
      transition: .5s;
   }
 
@@ -173,7 +173,7 @@ footer {
 }
 
     footer a:hover {
-	color: rgb(179, 141, 17);
+	color:#C3C3C3;
 }
 
     .s-m{
@@ -219,7 +219,7 @@ footer {
   }
   a:hover{
       background: none;
-      color: rgb(179, 141, 17);
+      color:#435058;
   }
   #check:checked ~ ul{
       left: 0;
@@ -231,7 +231,7 @@ footer {
 }
 
 section{ 
-    background: url(../images/Gold.jpg) no-repeat;
+    background: linear-gradient(180deg, #435058, #fff);
     background-size: cover;
     height: calc(100vh - 80px);
 }
