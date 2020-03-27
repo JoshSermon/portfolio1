@@ -22,46 +22,23 @@
         </ul>
     </nav>
 
-    <div class="project-section">
-
-        <header>
-            <h1>Projects</h1>
-            <div class="border"></div>
-        </header>
-
-        <div class="work">
-            <a href="https://joshsermon.github.io/sidesofboxing/">
-            <img src="../images/JoJo.PNG" alt="JoJo"></a>
-
-            <a href="https://byyourfruit.com/">
-            <img src="../images/FFC.png" alt="FFC"></a>
-            
-            <a href="https://joshsermon.github.io/upgrade/">
-            <img src="../images/BYF2.PNG" alt="BYF"></a>
-            <!-- <img src="../images/project4.jpg" alt="project img"> -->
-        </div>
-    </div>
-
     <style>
-        
-        * {
+
+        *{
             margin: 0;
             padding: 0;
-            border: none;
-            outline: none;
-            vertical-align: baseline;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            box-sizing: border-box;
         }
 
-    /* navbar */
-
     nav{
-        background: #fff;
-        height: 80px;
-        width: 100%;
+    background: black;
+    height: 80px;
+    width: 100%;
   }
 
   label.navbar{
-    color: black;
+    color: #fff;
     font-size: 20px;
     line-height: 80px;
     padding: 0 100px;
@@ -81,7 +58,7 @@
   }
 
   nav ul li a{
-      color: black;
+      color: #fff;
       font-size: 15px;
       padding: 7px 13px;
       border-radius: 3px;
@@ -106,130 +83,100 @@
   #check{
       display: none;
   }
-    
-        html {
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        .services-section{
+            background: url(/images/MOON.JPG);
+            background-size: cover;
+            padding: 60px 0;
+        }
+
+        .inner-width{
+            width: 50%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+            overflow: hidden;
         }
         
-        .project-section {
-            background: linear-gradient(180deg, #435058, #fff);
-            background-size: cover;
-            padding: 10px 0;
-            height: 100%;
-            background-attachment: fixed;
-        }
-
-     
-        .wrapper {
-            width: 90%;
-            margin: 0 auto;
-        }
-
-        h1 {
+        .section-title{
+            text-align: center;
             color: #fff;
             font-size: 32px;
-            text-align: center;
             text-shadow: 2px 2px 4px black;
         }
 
         .border{
-         width: 80px;
+         width: 120px;
          height: 10px;
          background: #fff;   
          margin: 40px auto;
         }
 
-        /* header */
-
-        header {
-            margin: 50px 0 50px 0;
+        .service-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
-
-        /* work */
-
-        .work {
+        .service-box{
+            padding: 10px;
             text-align: center;
-            width: 100%;
+            color: #fff;
         }
 
-        .work img {
-            margin: 1%;
-            width: 45%;
-        }
-
-        /* footer */
-
-        nav{
-            background: #fff;
-            height: 80px;
-            width: 100%;
-        }
-
-        label.navbar{
-            color: black;
-            font-size: 20px;
-            line-height: 80px;
-            padding: 0 100px;
-            font-weight: bold;
-        }
-
-        nav ul{
-            float: right;
-            margin-right: 20px;
-            text-decoration: none;
-        }
-
-        nav ul li{
+        .service-icon{
             display: inline-block;
-            line-height: 80px;
-            margin: 0 5px;
+            width: 40px;
+            height: 40px;
+            border: 3px solid #fff;
+            color: #fff;
+            transform: rotate(45deg);
+            margin-bottom: 30px;
+            margin-top: 16px;
+            transition: 0.3s linear;
+            text-shadow: 1px 1px 2px black;
         }
 
-        nav ul li a{
-            color: black;
-            font-size: 15px;
-            padding: 7px 13px;
-            border-radius: 3px;
+        .service-icon i{
+            line-height: 35px;
+            transform: rotate(-45deg);
+            font-size: 25px;
+        }
+
+        .service-box:hover .service-icon{
+            background: #C3C3C3;
+            color: #fff;
+        }
+
+        .service-title{
+            font-size: 18px;
             text-transform: uppercase;
-            text-decoration: none;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 4px black;
         }
 
-        a:hover{
-            background:#C3C3C3;
-            transition: .5s;
+        .service-desc{
+            font-size: 20px;
+            text-shadow: 2px 2px 3px black;
         }
 
-        .checkbtn{
-            font-size: 30px;
-            color: black;
-            float: right;
-            line-height: 80px;
-            margin-right: 40px;
-            cursor: pointer;
-            display: none;
-        }
-        #check{
-            display: none;
-        }
+                /* footer section */
 
-             /* footer section */
-
-             footer {
+        footer {
             padding-top: 15px;
-            padding-bottom: 10px;
-            background: #fff;
+            padding-bottom: 20px;
+            background: black;
         }
 
         footer p{
-            color: black;
+            color: #fff;
             font-size: 12px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             padding: 0 1em;
         }
 
         footer a {
-            color: black;
+            color: #fff;
         }
 
             footer a:hover {
@@ -245,76 +192,102 @@
             height: 100%;
         }
 
-        /* Respnsiveness */
+        @media (max-width: 858px) {
+            .checkbtn{
+        display: block;
+    }
 
-        @media only screen and (max-width: 991px) {
-            header {
-                text-align: left;
-                margin: 100px 0 100px 30px;
-            }
-
-            header h1 {
-                font-size: 32px;
-            }
-
-            .work img {
-                margin: 2%;
-                width: 90%;
-            }
-
-            .checkbtn {
-                 display: block;
-            }
-
-            ul{
-                position: fixed;
-                width: 100%;
-                height: 100vh;
-                background: #fff;
-                top: 80px;
-                left: -100%;
-                text-align: center;
-                transition: all .5s;
-            }
-            nav ul li{
-                display: block;
-                margin: 50px 0;
-                line-height: 30px;
-            }
-            nav ul li a{
-                font-size: 20px;
-            }
-            a:hover{
-                background: none;
-                color:#C3C3C3;
+        ul{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #fff;
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+        }
+        nav ul li{
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        nav ul li a{
+            font-size: 20px;
+        }
+        a:hover{
+            background: none;
+            color: #C3C3C3;
+        }
+        #check:checked ~ ul{
+            left: 0;
+        }
+            .service-box{
+                max-width: 100%;
             }
 
-            #check:checked ~ ul{
-                left: 0;
-  }
+            .service-icon{
+                display: none;
+            }
         }
 
-
-    
     </style>
 
-</div>
 
 
-<footer>
-    <div class="container">
-        <div class="row">
-             <h4><p style="float: right;">Copyright &copy; 2020 J.J.Sermon</h4>
-              <div class="s-m">
-                  <a href="#"><i class="fab fa-linkedin"></i></a>
-                  <a href="#"><i class="fab fa-github"></i></a>
-                  <a href="#"><i class="fas fa-envelope-square"></i></a>
-                  <a href="#"><i class="fas fa-file-word"></i></a>
-                 </div>
-      </div>
+    <div class="services-section">
+        <div class="inner-width">
+            <h1 class="section-title">Projects</h1>
+            <div class="border"></div>
+            <div class="services-container">
+
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="section-title">Project 1</div>
+                    <div class="service-desc">
+                        Faith Conference
+                    </div>
+                </div>
+
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="section-title">Project 2</div>
+                    <div class="service-desc">
+                        Sides of Boxing Website
+                    </div>
+                </div>
+
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fab fa-adobe"></i>
+                    </div>
+                    <div class="section-title">Project 3</div>
+                    <div class="service-desc">
+                        Traveling Website
+                    </div>
+                </div>
+            </div>
         </div>
-  </div>
-</footer>
+    </div>   
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                 <h4><p style="float: right;">Copyright &copy; 2020 J.J.Sermon</h4>
+                  <div class="s-m">
+                      <a href="#"><i class="fab fa-linkedin"></i></a>
+                      <a href="#"><i class="fab fa-github"></i></a>
+                      <a href="#"><i class="fas fa-envelope-square"></i></a>
+                      <a href="#"><i class="fas fa-file-word"></i></a>
+                     </div>
+          </div>
+            </div>
+      </div>
+    </footer>
 
 </body>
 </html>
