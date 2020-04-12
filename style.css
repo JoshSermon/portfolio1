@@ -120,6 +120,12 @@
       display: none;
   }
 
+  section{ 
+    background-image: url(/images/MOON.JPG);
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
   /* body section */
 
 h1 {
@@ -185,6 +191,11 @@ footer {
 
 
   @media (max-width: 952px){
+    section{ 
+      background: url(/images/MOON.JPG);
+      background-size: cover;
+      height: calc(100vh - 80px);
+  }
     label.navbar{
         font-size: 30px;
         padding-left: 50px;
