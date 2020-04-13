@@ -22,6 +22,9 @@
 
   .container{
     text-align: center;
+    background-image: url(/images/MOON.JPG);
+    background-size: cover;
+    height: calc(100vh - 80px);
   }
 
   .btn{
